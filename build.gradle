@@ -38,6 +38,8 @@ dependencies {
 	implementation "com.querydsl:querydsl-jpa:${queryDslVersion}"
 	implementation "com.querydsl:querydsl-apt:${queryDslVersion}"
 
+	// Spring Security 추가
+	implementation 'org.springframework.boot:spring-boot-starter-security'
 
 	//lombok
 	compileOnly 'org.projectlombok:lombok'
