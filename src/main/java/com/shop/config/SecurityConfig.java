@@ -18,7 +18,7 @@ public class SecurityConfig {
         http
                 .authorizeRequests() // 요청에 대한 보안인증 체크 선언
                 .mvcMatchers("/css/**","/image/**","/error").permitAll()
-                .mvcMatchers("/","/join","/login","/search/**").permitAll()
+                .mvcMatchers("/","/join","/members/**").permitAll()
                 .mvcMatchers("/post").hasRole("USER")
                 .anyRequest().authenticated(); // 모든 요청에 체크 (권한 상관X)
 
