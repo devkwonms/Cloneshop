@@ -51,7 +51,7 @@ class MemberControllerTest {
                         .user(email).password(password))
                 .andExpect(SecurityMockMvcResultMatchers.authenticated());
     }
-
+    // 오류나는거 버전 해결하기(아직못함)
     @Test
     @DisplayName("로그인 실패 테스트")
     public void loginFailTest() throws Exception{
